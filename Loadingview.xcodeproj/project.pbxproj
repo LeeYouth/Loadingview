@@ -10,10 +10,12 @@
 		E681EF3D1BB267C700C27A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF3C1BB267C700C27A33 /* main.m */; };
 		E681EF401BB267C700C27A33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF3F1BB267C700C27A33 /* AppDelegate.m */; };
 		E681EF431BB267C700C27A33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF421BB267C700C27A33 /* ViewController.m */; };
-		E681EF461BB267C700C27A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E681EF441BB267C700C27A33 /* Main.storyboard */; };
 		E681EF481BB267C700C27A33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E681EF471BB267C700C27A33 /* Images.xcassets */; };
 		E681EF4B1BB267C700C27A33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E681EF491BB267C700C27A33 /* LaunchScreen.xib */; };
 		E681EF571BB267C700C27A33 /* LoadingviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF561BB267C700C27A33 /* LoadingviewTests.m */; };
+		E681EF671BB281A900C27A33 /* LYActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF621BB281A900C27A33 /* LYActivityView.m */; };
+		E681EF681BB281A900C27A33 /* LYLoadingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF641BB281A900C27A33 /* LYLoadingLabel.m */; };
+		E681EF691BB281A900C27A33 /* UIView+LYLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E681EF661BB281A900C27A33 /* UIView+LYLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,17 @@
 		E681EF3F1BB267C700C27A33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E681EF411BB267C700C27A33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E681EF421BB267C700C27A33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E681EF451BB267C700C27A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E681EF471BB267C700C27A33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E681EF4A1BB267C700C27A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E681EF501BB267C700C27A33 /* LoadingviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E681EF551BB267C700C27A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E681EF561BB267C700C27A33 /* LoadingviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingviewTests.m; sourceTree = "<group>"; };
+		E681EF611BB281A900C27A33 /* LYActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActivityView.h; sourceTree = "<group>"; };
+		E681EF621BB281A900C27A33 /* LYActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActivityView.m; sourceTree = "<group>"; };
+		E681EF631BB281A900C27A33 /* LYLoadingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLoadingLabel.h; sourceTree = "<group>"; };
+		E681EF641BB281A900C27A33 /* LYLoadingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLoadingLabel.m; sourceTree = "<group>"; };
+		E681EF651BB281A900C27A33 /* UIView+LYLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYLoadingView.h"; sourceTree = "<group>"; };
+		E681EF661BB281A900C27A33 /* UIView+LYLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYLoadingView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +88,11 @@
 		E681EF391BB267C700C27A33 /* Loadingview */ = {
 			isa = PBXGroup;
 			children = (
+				E681EF601BB281A900C27A33 /* LYLoading */,
 				E681EF3E1BB267C700C27A33 /* AppDelegate.h */,
 				E681EF3F1BB267C700C27A33 /* AppDelegate.m */,
 				E681EF411BB267C700C27A33 /* ViewController.h */,
 				E681EF421BB267C700C27A33 /* ViewController.m */,
-				E681EF441BB267C700C27A33 /* Main.storyboard */,
 				E681EF471BB267C700C27A33 /* Images.xcassets */,
 				E681EF491BB267C700C27A33 /* LaunchScreen.xib */,
 				E681EF3A1BB267C700C27A33 /* Supporting Files */,
@@ -117,6 +124,19 @@
 				E681EF551BB267C700C27A33 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E681EF601BB281A900C27A33 /* LYLoading */ = {
+			isa = PBXGroup;
+			children = (
+				E681EF611BB281A900C27A33 /* LYActivityView.h */,
+				E681EF621BB281A900C27A33 /* LYActivityView.m */,
+				E681EF631BB281A900C27A33 /* LYLoadingLabel.h */,
+				E681EF641BB281A900C27A33 /* LYLoadingLabel.m */,
+				E681EF651BB281A900C27A33 /* UIView+LYLoadingView.h */,
+				E681EF661BB281A900C27A33 /* UIView+LYLoadingView.m */,
+			);
+			path = LYLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E681EF461BB267C700C27A33 /* Main.storyboard in Resources */,
 				E681EF4B1BB267C700C27A33 /* LaunchScreen.xib in Resources */,
 				E681EF481BB267C700C27A33 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E681EF671BB281A900C27A33 /* LYActivityView.m in Sources */,
 				E681EF431BB267C700C27A33 /* ViewController.m in Sources */,
 				E681EF401BB267C700C27A33 /* AppDelegate.m in Sources */,
+				E681EF691BB281A900C27A33 /* UIView+LYLoadingView.m in Sources */,
+				E681EF681BB281A900C27A33 /* LYLoadingLabel.m in Sources */,
 				E681EF3D1BB267C700C27A33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +266,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E681EF441BB267C700C27A33 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E681EF451BB267C700C27A33 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E681EF491BB267C700C27A33 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,6 +432,7 @@
 				E681EF5C1BB267C700C27A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E681EF5D1BB267C700C27A33 /* Build configuration list for PBXNativeTarget "LoadingviewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				E681EF5F1BB267C700C27A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

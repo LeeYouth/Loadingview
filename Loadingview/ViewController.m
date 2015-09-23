@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UIView+LYLoadingView.h"
+
 
 @interface ViewController ()
 
@@ -16,11 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor redColor];
     
     
-    //this is test demo
-    //9.24pm
+    [self.view showLoadingViewWithText:@"加载中..."];
+
 }
 
 - (void)didReceiveMemoryWarning {
