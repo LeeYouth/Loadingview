@@ -21,8 +21,12 @@
     
     self.view.backgroundColor = [UIColor redColor];
     
-    
+#pragma mark - how to use
+#pragma mark add activityView
     [self.view showLoadingViewWithText:@"加载中..."];
+    
+#pragma mark - stop Animating
+//    [self.view dismissLoadingView];
 
 }
 
