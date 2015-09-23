@@ -7,4 +7,4 @@
 #pragma mark - stop Animating
     [self.view dismissLoadingView];
     
-    ![](https://github.com/LeeYouth/Loadingview/loadingView_guide.gif)  
+    ![image](https://github.com/LeeYouth/Loadingview/blob/master/loadingView_guide.gif)  
